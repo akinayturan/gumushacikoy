@@ -9,7 +9,7 @@ sources:
   - name: Kızılca Ortaokulu · Gümüşhacıköy kültürel varlıkları gezisi
     url: https://ghkkizilcaoo.meb.k12.tr/icerikler/ogrencilerimizbugungumushacikoyilcesininvegumusmahallesinintarihimekanlarinikulturelvarliklariniziyaretettiler_15087376.html
 ---
-## Gümüş’teki ziyaret yerleri
+## Gümüş’teki ziyaret yerleri {#ziyaret-yerleri}
 
 Garip Hafız adıyla tanınan İbrahim Hakkı Güloğlu’nun kabri, İl Kültür ve Turizm Müdürlüğünün kaydına göre [Haliliye Medresesi]({{< relref "/miras/haliliye-medresesi" >}}) avlusundadır. Gümüş’te Yörgüç Rüstem Paşa Camii de Kaymakamlığın ziyaret kaydında yer alır.
 

@@ -39,12 +39,53 @@
         <a class="text-link" href="{{ (site.GetPage "/miras").RelPermalink }}">Tüm tarihî yapılar <span aria-hidden="true">→</span></a>
       </div>
       <div class="card-grid">
-        {{ range slice "/tarih" "/yerlesimler" "/inanc-ve-kultur" "/miras" "/defterler" "/sozlu-tarih" }}
-          {{ with site.GetPage . }}
-            {{ partial "record-card.html" . }}
-          {{ end }}
+        {{ range hugo.Data.anasayfa }}
+          {{ $page := site.GetPage .page }}
+          <article class="record-card">
+            <div class="card-body">
+              <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }} <span aria-hidden="true">↗</span></a></h3>
+              <p>{{ $page.Description }}</p>
+              <ul class="topic-links">
+                {{ range .links }}
+                  <li><a href="{{ (site.GetPage .page).RelPermalink }}{{ with .anchor }}#{{ . }}{{ end }}">{{ .label }}</a></li>
+                {{ end }}
+              </ul>
+            </div>
+          </article>
         {{ end }}
       </div>
+    </div>
+  </section>
+
+  <section class="shell home-location" id="konum" aria-labelledby="location-title">
+    <div>
+      <h2 id="location-title">Konum ve ulaşım</h2>
+      <p>Gümüşhacıköy, Amasya’nın batısında Merzifon ile Osmancık arasındadır.</p>
+      <div class="public-address">
+        <h3>Gümüşhacıköy Kaymakamlığı</h3>
+        <address>Cumara Mahallesi, Zübeyde Hanım Bulvarı No. 36<br>05700 Gümüşhacıköy, Amasya</address>
+        <a class="text-link" href="https://gumushacikoy.gov.tr/">Kaymakamlığın resmî sitesi</a>
+      </div>
+      <div class="hero-actions">
+        <a class="button" href="https://www.google.com/maps/dir/?api=1&amp;destination=40.87362%2C35.21590">İlçe merkezine yol tarifi</a>
+        <a class="text-link" href="{{ (site.GetPage "/nasil-gidilir").RelPermalink }}">Ulaşım bilgileri</a>
+      </div>
+    </div>
+    <figure class="home-map">
+      <iframe title="Gümüşhacıköy ilçe merkezi haritası" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=35.160%2C40.846%2C35.270%2C40.902&amp;layer=mapnik&amp;marker=40.87362%2C35.21590"></iframe>
+      <figcaption><a href="https://www.openstreetmap.org/?mlat=40.87362&amp;mlon=35.21590#map=13/40.87362/35.21590">OpenStreetMap’te aç</a></figcaption>
+    </figure>
+  </section>
+
+  <section class="shell recent-records" aria-labelledby="latest-articles-title">
+    <div class="section-heading">
+      <h2 id="latest-articles-title">Son yazılar</h2>
+      <a class="text-link" href="{{ (site.GetPage "/yazilar").RelPermalink }}">Tüm yazılar <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="card-grid">
+      {{ range first 3 (site.GetPage "/yazilar").RegularPages.ByDate.Reverse }}
+        {{ partial "record-card.html" . }}
+      {{ end }}
     </div>
   </section>
 
@@ -60,11 +101,26 @@
     </div>
   </section>
 
+  <section class="shell recent-records" aria-labelledby="evidence-title">
+    <div class="section-heading">
+      <h2 id="evidence-title">Bilgiyi nasıl kaynaklandırıyoruz?</h2>
+      <a class="text-link" href="{{ (site.GetPage "/yayin-ilkeleri").RelPermalink }}">Yayın ilkeleri</a>
+    </div>
+    <dl class="evidence-list">
+      <div><dt>Belge ve araştırma</dt><dd>Arşiv kaydı, resmî veri veya akademik çalışma.</dd></div>
+      <div><dt>Yerel aktarım</dt><dd>Yerel yayın, derleme veya aile notunda geçen bilgi.</dd></div>
+      <div><dt>Sözlü tarih</dt><dd>Adı ve kaynağı belirtilen bir anlatıcının hatırası.</dd></div>
+    </dl>
+  </section>
+
   <section class="shell contribution">
     <div>
       <h2>Elinizde ilçeye ait bir fotoğraf veya belge var mı?</h2>
       <p>Bir aile albümü, eski bir mektup ya da hatırladığınız bir hikâye arşive yeni bir kayıt kazandırabilir.</p>
     </div>
-    <a class="button" href="{{ (site.GetPage "/katki").RelPermalink }}">Nasıl katkıda bulunabilirim? <span aria-hidden="true">→</span></a>
+    <div class="contribution-actions">
+      <a class="button" href="{{ (site.GetPage "/katki").RelPermalink }}">Katkı rehberi <span aria-hidden="true">→</span></a>
+      <a href="mailto:info@ayturan.com">info@ayturan.com</a>
+    </div>
   </section>
 {{ end }}

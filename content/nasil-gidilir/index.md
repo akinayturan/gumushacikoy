@@ -11,4 +11,6 @@ Gümüşhacıköy, Merzifon ile Osmancık arasındaki devlet karayolu üzerinded
 
 [İlçe merkezini haritada açın](https://www.openstreetmap.org/search?query=G%C3%BCm%C3%BC%C5%9Fhac%C4%B1k%C3%B6y%2C%20Amasya).
 
+[İlçe haritası ve Kaymakamlık adresi]({{< relref "/" >}}#konum)
+
 İlçe merkezinde Bedesten ve Saat Kulesi, Gümüş’te Haliliye Medresesi ziyaret için iki ayrı konumdur. [Haliliye Medresesi’ni haritada arayın](https://www.openstreetmap.org/search?query=Haliliye%20Medresesi%2C%20G%C3%BCm%C3%BC%C5%9Fhac%C4%B1k%C3%B6y).

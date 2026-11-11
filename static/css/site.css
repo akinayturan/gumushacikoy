@@ -65,6 +65,22 @@ p { margin: 0; }
 .district-facts dd { margin: .3rem 0 0; font-weight: 600; line-height: 1.4; }
 .district-facts .fact-source { font-size: .75rem; font-weight: 400; }
 .recent-records { padding-block: 3rem 1rem; }
+.topic-links { margin: .8rem 0 0; padding-left: 1.15rem; font-size: .88rem; }
+.topic-links li + li { margin-top: .25rem; }
+.home-location { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 1.75rem; align-items: center; padding-block: 3rem 1rem; }
+.home-location h2 { font-size: clamp(2rem, 4vw, 3.1rem); margin-bottom: .6rem; }
+.public-address { margin-top: 1.2rem; }
+.public-address h3 { font-size: 1.3rem; margin-bottom: .45rem; }
+.public-address address { font-style: normal; }
+.public-address a { font-size: .88rem; }
+.home-map { margin: 0; }
+.home-map iframe { width: 100%; min-height: 300px; display: block; border: 1px solid var(--line); background: var(--wash); }
+.home-map figcaption { margin-top: .45rem; font-size: .8rem; }
+.evidence-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin: 0; }
+.evidence-list > div { border-top: 1px solid var(--line); padding-top: .65rem; }
+.evidence-list dt { font-weight: 700; }
+.evidence-list dd { margin: .3rem 0 0; color: var(--muted); }
+.contribution-actions { display: flex; flex-wrap: wrap; gap: .8rem 1rem; align-items: center; flex-shrink: 0; }
 .discovery { padding-block: clamp(2.25rem, 5vw, 4.25rem); border-block: 1px solid var(--line); background: var(--wash); }
 .section-heading { display: flex; gap: .5rem 1.5rem; flex-wrap: wrap; align-items: baseline; justify-content: space-between; margin-bottom: 1.5rem; }
 .section-heading h2, .contribution h2, .related h2 { font-size: clamp(2rem, 4vw, 3.1rem); letter-spacing: -.035em; }
@@ -122,6 +138,8 @@ select, input { border: 1px solid var(--line); padding: .72rem; background: var(
 .footer-inner { display: flex; justify-content: space-between; gap: .75rem 2rem; flex-wrap: wrap; padding-block: 1.3rem; }
 .footer-title { text-decoration: none; font: 1.35rem var(--serif); color: var(--ink); }
 .site-footer nav { flex-wrap: wrap; }
+.footer-contact p { color: var(--muted); font-size: .85rem; }
+.footer-contact > a:last-child { font-size: .85rem; }
 
 @media (max-width: 1000px) {
   .shell { width: calc(100% - 3rem); }
@@ -145,6 +163,7 @@ select, input { border: 1px solid var(--line); padding: .72rem; background: var(
   .brand-icon { width: 32px; height: 32px; }
   .brand-sub { font-size: .59rem; }
   .card-grid { grid-template-columns: 1fr; }
+  .home-location, .evidence-list { grid-template-columns: 1fr; }
   .district-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .district-facts > div:nth-child(3n) { border-inline-end: 1px solid var(--line); }
   .district-facts > div:nth-child(2n) { border-inline-end: 0; }

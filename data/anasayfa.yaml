@@ -1,0 +1,44 @@
+- page: /tarih
+  links:
+    - label: 1576 · Gümüş ve Hacıköy aynı kayıtta
+      page: /tarih
+      anchor: gumus-ile-hacikoy-ayni-kayitta
+    - label: Kaza merkezinin Hacıköy’e taşınması
+      page: /tarih
+      anchor: kaza-merkezinin-hacikoye-tasinmasi
+- page: /ilce
+  links:
+    - label: İlçe merkezi
+      page: /yerlesimler/ilce-merkezi
+    - label: Gümüş
+      page: /yerlesimler/gumus
+    - label: Mahalleler ve köyler
+      page: /yerlesimler
+- page: /miras
+  links:
+    - label: Haliliye Medresesi
+      page: /miras/haliliye-medresesi
+    - label: Bedesten ve Saat Kulesi
+      page: /miras/bedesten-ve-saat-kulesi
+- page: /inanc-ve-kultur
+  links:
+    - label: Gümüş’teki ziyaret yerleri
+      page: /inanc-ve-kultur
+      anchor: ziyaret-yerleri
+    - label: Tarihî defterler
+      page: /defterler
+- page: /aileler
+  links:
+    - label: Kişiler
+      page: /kisiler
+    - label: Sözlü tarih
+      page: /sozlu-tarih
+    - label: Fotoğraf arşivi
+      page: /arsiv
+- page: /nasil-gidilir
+  links:
+    - label: Karayolu uzaklıkları
+      page: /nasil-gidilir
+    - label: İlçe haritası ve adres
+      page: /
+      anchor: konum
