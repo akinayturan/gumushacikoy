@@ -20,10 +20,6 @@ Yerleşimler `content/yerlesimler`, yapılar `content/miras`, arşiv kayıtları
 
 İlk fotoğraf Wikimedia Commons’taki Emreozgul68 kaydından CC BY-SA 4.0 ile alınmıştır. Lisans, üretici ve kaynak bağlantısı künyede yer alır. Özel orijinalleri ve izin belgelerini Git deposunun dışında tutun.
 
-## GitHub Pages
-
-`main` dalına yapılan her push, GitHub Actions ile Hugo ve Pagefind’i derleyip siteyi yayımlar. Depo ayarlarında **Pages → Source → GitHub Actions** seçilir. Derleme, GitHub Pages’in verdiği adresi kullanır. Proje alt adresi Hugo bağlantılarına ve arama sonuçlarına uygulanır.
-
 ## Cloudflare Pages
 
 GitHub deposunu bir Pages projesine bağlayın. Üretim dalı `main`, derleme komutu `npm run build`, çıktı klasörü `public`. Cloudflare ortamında `HUGO_VERSION` değerini `0.169.0` olarak ayarlayın. Üretim için özel alan adı bağlandığında `SITE_URL` değerini tam HTTPS adresi olarak girin. Önizlemelerde derleme Cloudflare’ın verdiği URL’yi kullanır. `pages.dev` adresleri arama motorlarında indekslenmesin diye HTTP başlığı eklenir.
