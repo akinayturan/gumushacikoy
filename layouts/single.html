@@ -1,0 +1,40 @@
+{{ define "main" }}
+<article class="shell page-wrap" data-pagefind-body>
+  <div class="article-width">
+    {{ if and .Parent (not .Parent.IsHome) }}
+      <a class="back-link" href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a>
+    {{ end }}
+    <header class="page-heading">
+      {{ with .Params.arsivNo }}<p class="record-id">{{ . }}</p>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </header>
+    {{ with .Params.yerlesim }}
+      {{ with site.GetPage . }}
+        <p class="place-link">Yerleşim <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+      {{ else }}
+        {{ errorf "%s için yerleşim bağlantısı bulunamadı" $.Path }}
+      {{ end }}
+    {{ end }}
+    {{ if eq .Section "arsiv" }}
+      {{ partial "archive-detail.html" . }}
+    {{ end }}
+    <div class="prose">{{ .Content }}</div>
+    {{ partial "sources.html" . }}
+  </div>
+  {{ if eq .Section "yerlesimler" }}
+    {{ $key := .Path }}
+    {{ range slice (dict "title" "Kültürel miras" "section" "miras") (dict "title" "Arşiv kayıtları" "section" "arsiv") }}
+      {{ $title := .title }}
+      {{ with where (where site.RegularPages "Section" .section) "Params.yerlesim" $key }}
+        <section class="related">
+          <h2>{{ $title }}</h2>
+          <div class="card-grid">
+            {{ range . }}{{ partial "record-card.html" . }}{{ end }}
+          </div>
+        </section>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</article>
+{{ end }}

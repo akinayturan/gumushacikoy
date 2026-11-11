@@ -1,0 +1,16 @@
+{{ range slice "arsivno" "cekilistarihi" "author" "image" "imagealt" "license" "licenseurl" "sources" "yerlesim" "yerler" "donemler" "konular" }}
+  {{ if not (index $.Params .) }}{{ errorf "%s kaydında %s alanı eksik" $.Path . }}{{ end }}
+{{ end }}
+<figure class="article-image">
+  {{ partial "archive-image.html" (dict "page" . "width" 1200 "loading" "eager") }}
+</figure>
+<dl class="record-meta">
+  <div><dt>Fotoğraf</dt><dd>{{ .Params.author }}</dd></div>
+  <div><dt>Çekim tarihi</dt><dd>{{ .Params.cekilisTarihi }}</dd></div>
+  <div><dt>Lisans</dt><dd><a href="{{ .Params.licenseURL }}">{{ .Params.license }}</a></dd></div>
+</dl>
+<ul class="tag-list" aria-label="Arşiv etiketleri">
+  {{ range slice "yerler" "donemler" "konular" }}
+    {{ range $.GetTerms . }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}
+  {{ end }}
+</ul>

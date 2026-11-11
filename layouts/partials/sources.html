@@ -1,0 +1,8 @@
+{{ with .Params.sources }}
+  <section class="sources">
+    <h2>Kaynaklar</h2>
+    <ul>
+      {{ range . }}<li><a href="{{ .url }}">{{ .name }}</a></li>{{ end }}
+    </ul>
+  </section>
+{{ end }}

@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="shell page-wrap">
+  <div class="article-width">
+    <header class="page-heading"><h1>{{ .Title }}</h1><p>{{ .Description }}</p></header>
+    <form data-search data-index="{{ "pagefind/pagefind.js" | relURL }}" data-base="{{ site.Home.RelPermalink }}">
+      <label for="sorgu">Arama terimi</label>
+      <div class="search-form">
+        <input type="search" id="sorgu" name="q" required placeholder="Örneğin Haliliye Medresesi">
+        <button class="button" type="submit">Ara</button>
+      </div>
+    </form>
+    <p data-search-status role="status"></p>
+    <ol class="search-results" data-search-results></ol>
+    <noscript><p>Site içi aramayı kullanmak için JavaScript’i etkinleştirin.</p></noscript>
+    <script src="{{ "js/search.js" | relURL }}" type="module"></script>
+  </div>
+</article>
+{{ end }}

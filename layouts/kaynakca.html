@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="shell page-wrap">
+  <div class="article-width">
+    <header class="page-heading"><h1>{{ .Title }}</h1><p>{{ .Description }}</p></header>
+    {{ range $page := site.RegularPages.ByTitle }}
+      {{ with .Params.sources }}
+        <section class="sources">
+          <h2><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h2>
+          <ul>{{ range . }}<li><a href="{{ .url }}">{{ .name }}</a></li>{{ end }}</ul>
+        </section>
+      {{ end }}
+    {{ end }}
+  </div>
+</article>
+{{ end }}

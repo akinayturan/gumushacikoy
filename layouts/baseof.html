@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ site.Title }}</title>
+  <meta name="description" content="{{ .Description | default site.Params.description }}">
+  {{ if eq hugo.Environment "preview" }}<meta name="robots" content="noindex">{{ end }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/site.css" | relURL }}">
+</head>
+<body>
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+  <header class="site-header">
+    <div class="shell masthead">
+      <a class="brand" href="{{ site.Home.RelPermalink }}">
+        <span class="brand-icon" aria-hidden="true">GH</span>
+        <span>Gümüşhacıköy<span class="brand-sub">Hafızası</span></span>
+      </a>
+      <nav aria-label="Ana menü">
+        {{ range site.Menus.main }}
+          <a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}aria-current="page"{{ else if $.HasMenuCurrent "main" . }}class="active"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+      </nav>
+      <div class="header-actions">
+        <a class="search-link" href="{{ (site.GetPage "/arama").RelPermalink }}">Ara</a>
+        <a class="button button-small" href="{{ (site.GetPage "/katki").RelPermalink }}">Katkıda bulun</a>
+      </div>
+    </div>
+  </header>
+  <main id="icerik">
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <a class="footer-title" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+      <nav aria-label="Site bilgileri">
+        <a href="{{ (site.GetPage "/kaynakca").RelPermalink }}">Kaynakça</a>
+        <a href="{{ (site.GetPage "/yayin-ilkeleri").RelPermalink }}">Yayın ilkeleri</a>
+        <a href="{{ (site.GetPage "/katki").RelPermalink }}">Katkıda bulun</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<article class="record-card"
+  {{ if eq .Section "arsiv" }}
+    data-record
+    data-yerler="{{ partial "term-labels.html" (.GetTerms "yerler") }}"
+    data-donemler="{{ partial "term-labels.html" (.GetTerms "donemler") }}"
+    data-konular="{{ partial "term-labels.html" (.GetTerms "konular") }}"
+  {{ end }}>
+  {{ if .Params.image }}
+    <a class="card-image" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+      {{ partial "archive-image.html" (dict "page" . "width" 640 "loading" "lazy") }}
+    </a>
+  {{ end }}
+  <div class="card-body">
+    {{ with .Params.arsivNo }}<p class="record-id">{{ . }}</p>{{ end }}
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }} <span aria-hidden="true">↗</span></a></h3>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </div>
+</article>

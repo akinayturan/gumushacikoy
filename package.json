@@ -1,0 +1,11 @@
+{
+  "name": "gumushacikoy-hafizasi",
+  "private": true,
+  "scripts": {
+    "build": "sh scripts/build.sh",
+    "dev": "hugo server --disableFastRender"
+  },
+  "devDependencies": {
+    "pagefind": "1.6.0"
+  }
+}

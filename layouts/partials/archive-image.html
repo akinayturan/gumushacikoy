@@ -1,0 +1,7 @@
+{{ $page := .page }}
+{{ with $page.Resources.Get $page.Params.image }}
+  {{ $image := .Resize (printf "%dx webp q82" $.width) }}
+  <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ $page.Params.imageAlt }}" loading="{{ $.loading }}" decoding="async">
+{{ else }}
+  {{ errorf "%s için arşiv görseli bulunamadı" $page.Path }}
+{{ end }}

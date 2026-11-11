@@ -1,0 +1,34 @@
+baseURL = 'http://localhost:1313/'
+title = 'Gümüşhacıköy Hafızası'
+locale = 'tr-TR'
+defaultContentLanguage = 'tr'
+enableRobotsTXT = true
+
+[languages.tr]
+  locale = 'tr-TR'
+  label = 'Türkçe'
+
+[params]
+  description = 'Gümüşhacıköy’ün yerleşimleri, kültürel mirası ve fotoğraf arşivi.'
+
+[taxonomies]
+  yer = 'yerler'
+  donem = 'donemler'
+  konu = 'konular'
+
+[[menus.main]]
+  name = 'İlçe ve tarih'
+  pageRef = '/ilce'
+  weight = 10
+[[menus.main]]
+  name = 'Yerleşimler'
+  pageRef = '/yerlesimler'
+  weight = 20
+[[menus.main]]
+  name = 'Kültürel miras'
+  pageRef = '/miras'
+  weight = 30
+[[menus.main]]
+  name = 'Arşiv'
+  pageRef = '/arsiv'
+  weight = 40

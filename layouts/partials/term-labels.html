@@ -1,0 +1,5 @@
+{{- $labels := slice -}}
+{{- range . -}}
+  {{- $labels = $labels | append .LinkTitle -}}
+{{- end -}}
+{{- return (delimit $labels "|") -}}

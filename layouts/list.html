@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="shell page-wrap">
+  <header class="page-heading">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+  {{ if and (eq .Kind "section") (eq .Section "arsiv") }}
+    <div class="filters" data-archive-filters hidden>
+      {{ range $key, $label := dict "yerler" "Yer" "donemler" "Dönem" "konular" "Konu" }}
+        <label for="{{ $key }}">{{ $label }}
+          <select id="{{ $key }}" name="{{ $key }}">
+            <option value="">Tümü</option>
+            {{ range (index site.Taxonomies $key).Alphabetical }}
+              <option value="{{ .Page.LinkTitle }}">{{ .Page.LinkTitle }}</option>
+            {{ end }}
+          </select>
+        </label>
+      {{ end }}
+      <button class="button button-light" type="button" data-reset>Filtreleri temizle</button>
+    </div>
+    <p class="result-count" data-result-count role="status"></p>
+    <script src="{{ "js/archive.js" | relURL }}" defer></script>
+  {{ else if eq .Kind "term" }}
+    <p><a class="text-link" href="{{ (site.GetPage "/arsiv").RelPermalink }}">Tüm arşiv kayıtları →</a></p>
+  {{ end }}
+  {{ with .Pages }}
+    <div class="card-grid" aria-label="{{ $.Title }} kayıtları">
+      {{ range . }}{{ partial "record-card.html" . }}{{ end }}
+    </div>
+  {{ end }}
+</div>
+{{ end }}
