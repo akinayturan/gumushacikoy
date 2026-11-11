@@ -20,7 +20,18 @@
       </a>
       <nav aria-label="Ana menü">
         {{ range site.Menus.main }}
-          <a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}aria-current="page"{{ else if $.HasMenuCurrent "main" . }}class="active"{{ end }}>{{ .Name }}</a>
+          {{ if .HasChildren }}
+            <details class="nav-group" name="ana-menu">
+              <summary {{ if $.HasMenuCurrent "main" . }}class="active"{{ end }}>{{ .Name }}</summary>
+              <ul>
+                {{ range .Children }}
+                  <li><a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}aria-current="page"{{ end }}>{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+            </details>
+          {{ else }}
+            <a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}aria-current="page"{{ else if $.HasMenuCurrent "main" . }}class="active"{{ end }}>{{ .Name }}</a>
+          {{ end }}
         {{ end }}
       </nav>
       <div class="header-actions">

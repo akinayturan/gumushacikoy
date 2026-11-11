@@ -1,0 +1,230 @@
+{
+  "mahalleler": [
+    {
+      "name": "Adatepe",
+      "population": 397
+    },
+    {
+      "name": "Ağcadede",
+      "population": 69
+    },
+    {
+      "name": "Artıkabat",
+      "population": 5732
+    },
+    {
+      "name": "Camikebir",
+      "population": 320
+    },
+    {
+      "name": "Cumara",
+      "population": 1650
+    },
+    {
+      "name": "Çay",
+      "population": 1195
+    },
+    {
+      "name": "Hacıyahya",
+      "population": 3005
+    },
+    {
+      "name": "Irgat",
+      "population": 264
+    },
+    {
+      "name": "Saray",
+      "population": 2441
+    },
+    {
+      "name": "Şıhlar",
+      "population": 112
+    },
+    {
+      "name": "Tekke",
+      "population": 99
+    },
+    {
+      "name": "Yenicami",
+      "population": 43
+    }
+  ],
+  "koyler": [
+    {
+      "name": "Akpınar",
+      "population": 36
+    },
+    {
+      "name": "Alören",
+      "population": 73
+    },
+    {
+      "name": "Aşağıovacık",
+      "population": 146
+    },
+    {
+      "name": "Bacakoğlu",
+      "population": 155
+    },
+    {
+      "name": "Bademli",
+      "population": 210
+    },
+    {
+      "name": "Balıklı",
+      "population": 65
+    },
+    {
+      "name": "Beden",
+      "population": 144
+    },
+    {
+      "name": "Çalköy",
+      "population": 241
+    },
+    {
+      "name": "Çavuşköy",
+      "population": 62
+    },
+    {
+      "name": "Çetmi",
+      "population": 424
+    },
+    {
+      "name": "Çiftçioğlu",
+      "population": 88
+    },
+    {
+      "name": "Çitli",
+      "population": 154
+    },
+    {
+      "name": "Derbentobruğu",
+      "population": 197
+    },
+    {
+      "name": "Doluca",
+      "population": 166
+    },
+    {
+      "name": "Dumanlı",
+      "population": 134
+    },
+    {
+      "name": "Eslemez",
+      "population": 144
+    },
+    {
+      "name": "Güllüce",
+      "population": 28
+    },
+    {
+      "name": "Güplüce",
+      "population": 171
+    },
+    {
+      "name": "Güvemözü",
+      "population": 34
+    },
+    {
+      "name": "İmirler",
+      "population": 168
+    },
+    {
+      "name": "Kağnıcı",
+      "population": 364
+    },
+    {
+      "name": "Karaali",
+      "population": 29
+    },
+    {
+      "name": "Karacaören",
+      "population": 268
+    },
+    {
+      "name": "Karakaya",
+      "population": 50
+    },
+    {
+      "name": "Keçiköy",
+      "population": 342
+    },
+    {
+      "name": "Kılıçaslan",
+      "population": 42
+    },
+    {
+      "name": "Kırca",
+      "population": 232
+    },
+    {
+      "name": "Kızık",
+      "population": 55
+    },
+    {
+      "name": "Kızılca",
+      "population": 157
+    },
+    {
+      "name": "Kiziroğlu",
+      "population": 165
+    },
+    {
+      "name": "Koltuk",
+      "population": 89
+    },
+    {
+      "name": "Konuktepe",
+      "population": 81
+    },
+    {
+      "name": "Korkut",
+      "population": 293
+    },
+    {
+      "name": "Köseler",
+      "population": 281
+    },
+    {
+      "name": "Kutluca",
+      "population": 167
+    },
+    {
+      "name": "Kuzalan",
+      "population": 225
+    },
+    {
+      "name": "Ovabaşı",
+      "population": 247
+    },
+    {
+      "name": "Pusacak",
+      "population": 177
+    },
+    {
+      "name": "Sallar",
+      "population": 146
+    },
+    {
+      "name": "Saraycık",
+      "population": 186
+    },
+    {
+      "name": "Sarayözü",
+      "population": 160
+    },
+    {
+      "name": "Sekü",
+      "population": 105
+    },
+    {
+      "name": "Yazıyeri",
+      "population": 159
+    },
+    {
+      "name": "Yeniköy",
+      "population": 132
+    }
+  ]
+}

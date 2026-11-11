@@ -34,6 +34,11 @@ p { margin: 0; }
 .masthead nav a, .header-actions a, .site-footer nav a { white-space: nowrap; font-size: .86rem; }
 .masthead nav a, .site-footer nav a { color: var(--ink); text-decoration: none; }
 .masthead nav a:hover, .masthead nav a[aria-current], .masthead nav a.active { text-decoration: underline; color: var(--accent-dark); }
+.nav-group { position: relative; font-size: .86rem; }
+.nav-group summary { cursor: pointer; }
+.nav-group summary.active { color: var(--accent-dark); }
+.nav-group ul { position: absolute; z-index: 3; min-width: 10.5rem; width: max-content; margin: .5rem 0 0; padding: .35rem; list-style: none; border: 1px solid var(--line); background: var(--white); box-shadow: 0 .35rem 1rem #26231f16; }
+.nav-group a { display: block; padding: .45rem .65rem; }
 
 .button { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; padding: .8rem 1.05rem; background: var(--accent-dark); color: var(--white); text-decoration: none; font: 600 .9rem/1.4 var(--sans); border: 1px solid var(--accent-dark); cursor: pointer; }
 .button:hover { background: var(--accent); color: var(--white); }
@@ -53,6 +58,13 @@ p { margin: 0; }
 .hero-figure img { aspect-ratio: 1.42; object-fit: cover; background: var(--wash); }
 .hero-figure figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .3rem 1rem; margin-top: .5rem; font-size: .72rem; color: var(--muted); }
 
+.district-facts { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); margin-block: 0 clamp(2rem, 4.5vw, 4rem); border: 1px solid var(--line); background: var(--white); }
+.district-facts > div { padding: 1rem .9rem; border-inline-end: 1px solid var(--line); }
+.district-facts > div:last-child { border-inline-end: 0; }
+.district-facts dt { color: var(--accent-dark); font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; }
+.district-facts dd { margin: .3rem 0 0; font-weight: 600; line-height: 1.4; }
+.district-facts .fact-source { font-size: .75rem; font-weight: 400; }
+.recent-records { padding-block: 3rem 1rem; }
 .discovery { padding-block: clamp(2.25rem, 5vw, 4.25rem); border-block: 1px solid var(--line); background: var(--wash); }
 .section-heading { display: flex; gap: .5rem 1.5rem; flex-wrap: wrap; align-items: baseline; justify-content: space-between; margin-bottom: 1.5rem; }
 .section-heading h2, .contribution h2, .related h2 { font-size: clamp(2rem, 4vw, 3.1rem); letter-spacing: -.035em; }
@@ -79,6 +91,12 @@ p { margin: 0; }
 .prose { max-width: 68ch; }
 .prose p, .prose ul { margin-bottom: 1rem; }
 .prose h2, .sources h2 { font-size: 1.85rem; margin: 1.75rem 0 .75rem; }
+.prose h3 { font-size: 1.3rem; margin: 1.4rem 0 .5rem; }
+.population-table { width: 100%; margin-bottom: 2rem; border-collapse: collapse; }
+.population-table caption { text-align: left; padding-bottom: .6rem; color: var(--muted); }
+.population-table th, .population-table td { padding: .4rem .65rem; border-bottom: 1px solid var(--line); text-align: left; }
+.population-table td, .population-table thead th:last-child { text-align: right; }
+.population-table tbody th { font-weight: 400; }
 .prose li + li, .sources li + li { margin-top: .35rem; }
 .sources ul { padding-left: 1.2rem; }
 .sources, .related { border-top: 1px solid var(--line); margin-top: 2rem; }
@@ -110,6 +128,9 @@ select, input { border: 1px solid var(--line); padding: .72rem; background: var(
   .masthead { flex-wrap: wrap; padding-block: .8rem; gap: .75rem 1rem; }
   .masthead nav { order: 2; width: 100%; flex-wrap: wrap; row-gap: .25rem; }
   .contribution { align-items: start; flex-direction: column; }
+  .district-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .district-facts > div:nth-child(3n) { border-inline-end: 0; }
+  .district-facts > div:nth-child(n+4) { border-block-start: 1px solid var(--line); }
 }
 
 @media (max-width: 680px) {
@@ -118,9 +139,14 @@ select, input { border: 1px solid var(--line); padding: .72rem; background: var(
   .hero h1 { font-size: min(15.2cqi, 4.5rem); }
   .hero-figure img { aspect-ratio: 16/10; }
   .masthead nav a, .header-actions a { font-size: .79rem; }
+  .nav-group { font-size: .79rem; }
   .masthead nav, .header-actions { column-gap: .65rem; }
   .brand { font-size: 1rem; gap: .38rem; }
   .brand-icon { width: 32px; height: 32px; }
   .brand-sub { font-size: .59rem; }
   .card-grid { grid-template-columns: 1fr; }
+  .district-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .district-facts > div:nth-child(3n) { border-inline-end: 1px solid var(--line); }
+  .district-facts > div:nth-child(2n) { border-inline-end: 0; }
+  .district-facts > div:nth-child(n+3) { border-block-start: 1px solid var(--line); }
 }

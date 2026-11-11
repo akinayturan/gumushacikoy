@@ -1,0 +1,14 @@
+{{ $key := .Get 0 }}
+{{ with index hugo.Data.yerlesimler_2025 $key }}
+<table class="population-table">
+  <caption>{{ if eq $key "mahalleler" }}Mahalle{{ else }}Köy{{ end }} nüfusları · 31 Aralık 2025</caption>
+  <thead><tr><th scope="col">Yerleşim</th><th scope="col">Nüfus</th></tr></thead>
+  <tbody>
+    {{ range . }}
+      <tr><th scope="row">{{ .name }}</th><td>{{ lang.FormatNumber 0 .population }}</td></tr>
+    {{ end }}
+  </tbody>
+</table>
+{{ else }}
+  {{ errorf "Yerleşim nüfus tablosu bulunamadı: %s" $key }}
+{{ end }}

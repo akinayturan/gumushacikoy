@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="shell page-wrap">
+<div class="shell page-wrap" {{ if eq .Kind "section" }}data-pagefind-body{{ end }}>
   <header class="page-heading">
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}

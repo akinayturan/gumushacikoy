@@ -1,18 +1,18 @@
 ---
-title: İlçe ve tarih
-description: Gümüş ile Hacıköy’ün adlarını bir araya getiren ilçenin geçmişine kısa bir giriş.
+title: Gümüşhacıköy
+description: Amasya’nın batısında, tarihî Gümüş ve Hacıköy yerleşimlerinin adını taşıyan ilçe.
 sources:
-  - name: Gümüşhacıköy Kaymakamlığı · İlçe Tanıtımı
+  - name: Gümüşhacıköy Kaymakamlığı · İlçe tanıtımı
     url: https://www.gumushacikoy.gov.tr/ilce-tanitimi
   - name: Amasya İl Kültür ve Turizm Müdürlüğü · Gümüşhacıköy
     url: https://amasya.ktb.gov.tr/TR-59478/gumushacikoy.html
+  - name: TÜİK · 2025 ADNKS ilçe, mahalle ve köy tabloları
+    url: https://www.tuik.gov.tr/media/announcements/2025ADNKS_FavoriTablolar.xlsx
 ---
-Gümüşhacıköy, Amasya’nın batısında, Merzifon ile Osmancık arasında yer alır. İlçenin adı, tarihî Gümüş yerleşimi ile bugünkü ilçe merkezinin önceki adı olan Hacıköy’ü bir araya getirir.
+Gümüşhacıköy, Amasya’nın batısında Merzifon ile Osmancık arasında yer alır. Gümüş, madencilik geçmişi ve tarihî yapılarıyla bilinir. Tarihî Hacıköy ise bugünkü ilçe merkezidir.
 
-## Gümüş ve Hacıköy
+[İlçenin adının ve idari merkezinin nasıl şekillendiğini okuyun.]({{< relref "/tarih" >}})
 
-Kaymakamlığın ilçe tanıtımına göre Gümüş ve Hacıköy, 1576 tarihli idari kayıtta birlikte anılır. Gümüş’ün maden geçmişi bugün Haliliye Medresesi’nin kuruluş hikâyesi ve Maden Camii gibi yapıların adlarında izlenebilir.
+## Nüfus ve yerleşimler
 
-## İlçe merkezinin oluşumu
-
-Amasya İl Kültür ve Turizm Müdürlüğü, Hacıköy’de belediyenin 1890’da kurulduğunu ve yerleşimin 1892’de ilçe merkezi olduğunu belirtir.
+TÜİK’in 31 Aralık 2025 verilerine göre ilçenin toplam nüfusu 22.319 kişidir. İlçe merkezinde 15.327, köylerde 6.992 kişi kayıtlıdır. [Yerleşim dizininde]({{< relref "/yerlesimler" >}}) 2025 tablolarındaki mahalle ve köyleri bulabilirsiniz.

@@ -2,6 +2,7 @@
 <article class="shell page-wrap">
   <div class="article-width">
     <header class="page-heading"><h1>{{ .Title }}</h1><p>{{ .Description }}</p></header>
+    <div class="prose">{{ .Content }}</div>
     {{ range $page := site.RegularPages.ByTitle }}
       {{ with .Params.sources }}
         <section class="sources">
