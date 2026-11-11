@@ -12,6 +12,7 @@
   {{ end }}
   <div class="card-body">
     {{ with .Params.arsivNo }}<p class="record-id">{{ . }}</p>{{ end }}
+    {{ with .Params.source_type }}<p class="record-id">{{ . }}</p>{{ end }}
     <h3><a href="{{ .RelPermalink }}">{{ .Title }} <span aria-hidden="true">↗</span></a></h3>
     {{ with .Description }}<p>{{ . }}</p>{{ end }}
   </div>

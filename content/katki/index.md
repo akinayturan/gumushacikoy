@@ -6,4 +6,4 @@ Aile albümlerindeki fotoğraflar, eski mektuplar, okul belgeleri ve ilçeye dai
 
 Bir fotoğraf veya belgeyi hazırlarken bildiğiniz kadarıyla yerini, tarihini, kimin çektiğini ya da hazırladığını ve nereden geldiğini not edin. Tarih yaklaşık ise dönemi yazabilirsiniz. Bir hatıra kaydı için anlatıcının hangi metin veya sesin yayımlanmasına izin verdiği de belirtilmeli.
 
-Katkı ve düzeltme e-posta adresi hazırlık aşamasında.
+Fotoğraf, belge, aile hikâyesi veya düzeltme göndermek için [info@ayturan.com](mailto:info@ayturan.com) adresine yazabilirsiniz. Aile kayıtlarına yerleşimi, yaklaşık dönemi ve bilginin hangi belgeye veya anlatıya dayandığını ekleyin.

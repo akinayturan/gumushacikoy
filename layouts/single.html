@@ -6,6 +6,7 @@
     {{ end }}
     <header class="page-heading">
       {{ with .Params.arsivNo }}<p class="record-id">{{ . }}</p>{{ end }}
+      {{ with .Params.source_type }}<p class="record-id">{{ . }}</p>{{ end }}
       <h1>{{ .Title }}</h1>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
     </header>
