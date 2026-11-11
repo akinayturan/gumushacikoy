@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://gumushacikoy.pages.dev/'
 title = 'Gümüşhacıköy Hafızası'
 locale = 'tr-TR'
 defaultContentLanguage = 'tr'
