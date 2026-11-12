@@ -25,3 +25,7 @@ Yerleşimler `content/yerlesimler`, yapılar `content/miras`, arşiv kayıtları
 GitHub deposunu bir Pages projesine bağlayın. Üretim dalı `main`, derleme komutu `npm run build`, çıktı klasörü `public`. Cloudflare ortamında `HUGO_VERSION` değerini `0.169.0` olarak ayarlayın. Üretim için özel alan adı bağlandığında `SITE_URL` değerini tam HTTPS adresi olarak girin. Önizlemelerde derleme Cloudflare’ın verdiği URL’yi kullanır. `pages.dev` adresleri arama motorlarında indekslenmesin diye HTTP başlığı eklenir.
 
 Özel alan adı ve katkı e-postası belirlendiğinde katkı sayfasına gerçek iletişim bilgisi ekleyin.
+
+## İçerik kılavuzu ve yeni siteler
+
+Yeni kayıtlar için [Yerel Hafıza Yayın Kılavuzu](YAYIN-KILAVUZU.md), yeni projeler için [Hugo şablonu](templates/yerel-hafiza/README.md).

@@ -1,0 +1,17 @@
+:root { color-scheme: light; background: #f7f5ed; color: #202b29; font: 1rem/1.6 "DM Sans", system-ui, sans-serif; }
+body { margin: 0; }
+a { color: #1b554c; text-underline-offset: .2em; }
+.shell { max-width: 56rem; margin-inline: auto; padding: 1.25rem; }
+header { border-bottom: 1px solid #cdd8cc; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem 1rem; margin-top: .7rem; }
+.brand, h1, h2 { font-family: Baskervville, Georgia, serif; }
+.brand { font-size: 1.4rem; }
+h1 { font-size: clamp(2rem, 7vw, 3.5rem); line-height: 1.15; }
+.skip { position: absolute; top: 0; transform: translateY(-120%); }
+.skip:focus { transform: none; background: white; padding: .5rem; }
+.index { padding: 0; list-style: none; }
+.index li { padding: .75rem 0; border-bottom: 1px solid #cdd8cc; }
+.index p { margin: .25rem 0 0; }
+table { width: 100%; border-collapse: collapse; }
+td, th { padding: .5rem; border-bottom: 1px solid #cdd8cc; text-align: left; overflow-wrap: anywhere; }
+img { max-width: 100%; height: auto; }

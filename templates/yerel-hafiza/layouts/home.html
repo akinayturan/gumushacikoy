@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1>{{ site.Title }}</h1>
+<p>{{ site.Params.description }}</p>
+{{ .Content }}
+<h2>Bölümler</h2>
+<ul class="index">
+  {{ range site.Menus.main }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a>{{ with .Page.Description }}<p>{{ . }}</p>{{ end }}</li>
+  {{ end }}
+</ul>
+{{ with site.GetPage "/yazilar" }}
+  {{ with first 5 .RegularPages.ByDate.Reverse }}
+    <h2>Son yazılar</h2>
+    <ul>{{ range . }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul>
+  {{ end }}
+{{ end }}
+{{ end }}

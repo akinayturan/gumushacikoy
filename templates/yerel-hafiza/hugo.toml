@@ -1,0 +1,9 @@
+baseURL = 'https://example.org/'
+title = 'Yerel Hafıza'
+defaultContentLanguage = 'tr'
+locale = 'tr-TR'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  description = 'Yerleşimin tarihini, ailelerini ve arşivini kaynaklarıyla bir araya getiren yerel hafıza sitesi.'

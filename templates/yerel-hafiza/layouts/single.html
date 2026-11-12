@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article>
+  {{ if and .Parent (not .Parent.IsHome) }}<a href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a>{{ end }}
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.source_type }}<p>Kaynak türü · {{ . }}</p>{{ end }}
+  {{ .Content }}
+  {{ with .Params.sources }}
+    <h2>Kaynaklar</h2>
+    <ul>
+      {{ range . }}
+        <li>{{ with .url }}<a href="{{ . }}">{{ end }}{{ .name }}{{ with .url }}</a>{{ end }}</li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</article>
+{{ end }}
