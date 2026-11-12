@@ -1,8 +1,11 @@
 - page: /tarih
   links:
-    - label: 1576 · Gümüş ve Hacıköy aynı kayıtta
+    - label: Gümüş ve Hacıköy aynı kayıtta
       page: /tarih
       anchor: gumus-ile-hacikoy-ayni-kayitta
+    - label: 1885 · Devlet salnamesinde Gümüş Hacıköyü
+      page: /tarih
+      anchor: devlet-salnamelerinde
     - label: Kaza merkezinin Hacıköy’e taşınması
       page: /tarih
       anchor: kaza-merkezinin-hacikoye-tasinmasi
