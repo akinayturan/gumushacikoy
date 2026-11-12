@@ -19,5 +19,12 @@
     </nav>
   </header>
   <main class="shell" id="icerik">{{ block "main" . }}{{ end }}</main>
+  <footer class="shell">
+    <nav aria-label="Site bilgileri">
+      {{ range slice "/katki" "/yayin-ilkeleri" }}
+        {{ with site.GetPage . }}<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}
+      {{ end }}
+    </nav>
+  </footer>
 </body>
 </html>

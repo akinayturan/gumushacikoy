@@ -1,6 +1,14 @@
 # Yerel Hafıza Yayın Kılavuzu
 
+## Ana menü ve ana sayfa
+
+Sarışaban Hafızası’nın düzenini izleyin. Ana menüde kısa etiketlerle doğrudan sayfalara gidilir. Varsayılan sıra **Tarih**, **Yerler**, **Aileler ve kişiler**, yerel içeriğin ana konusu ve **Kaynakça**. Mübadele, fotoğraf ve video, arşiv veya yazılardan hangileri öne çıkıyorsa menüye eklenir. Alt başlıklara ilgili sayfa, ana sayfa veya altbilgiden ulaşılır.
+
+Ana sayfanın girişinde yerleşimi tek cümleyle tanıtın. Okuru yerleşimi anlamaya yardımcı olan başlığa yönlendirin. Yerleşimin bugünkü ve tarihî adları anlatının merkezindeyse bu adları girişte gösterin. Adların birleşimi ile idari değişikliklerin tarihini kaynaklarda geçtiği biçimiyle yazın.
+
 ## Site haritası
+
+Bu tablo içerik adreslerini gösterir. Ana menüde yer alacak başlıklar sitenin içeriğine göre seçilir.
 
 | Bölüm | İçerik | Hugo yolu |
 | --- | --- | --- |
@@ -29,7 +37,7 @@ Ana sayfadaki nüfus, rakım, mesafe ve tarih gibi değerlerin yanında kaynak v
 
 ## Yayımlamadan önce
 
-- [ ] İçerik yukarıdaki bölümlerden birine ve mevcut Hugo sayfa yapısına yerleştirildi.
+- [ ] İçerik uygun bölüme yerleştirildi. Ana menü bağlantıları ana konulara, alt başlıklar ilgili sayfalara açılıyor.
 - [ ] Tarih, kişi, yer ve aile bağı ilgili kaynağa bağlandı. Belge numarası, sayfa ve tarih biliniyorsa künye bunları içeriyor.
 - [ ] Arşiv malzemesinin üreticisi, yeri, tarihi ve kullanım koşulları künyede. Eksik bilgiler işaretli.
 - [ ] İzin durumu belli. Görselin açıklaması, video bağlantısı ve düzeltme iletişimi kullanılabilir.

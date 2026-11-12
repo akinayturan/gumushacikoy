@@ -4,10 +4,10 @@
     <div class="hero-copy">
       <p class="location">Amasya <span aria-hidden="true">/</span> Gümüşhacıköy</p>
       <h1 id="hero-title">Gümüşhacıköy<br><em>Hafızası</em></h1>
-      <p class="hero-intro">Tarihî adı Hacıköy olan ilçe merkezinin, Gümüş’ün ve ilçeye bağlı köylerin geçmişine açılan bir arşiv.</p>
+      <p class="hero-intro">{{ (site.GetPage "/ilce").Description }}</p>
       <div class="hero-actions">
-        <a class="button" href="{{ (site.GetPage "/yerlesimler").RelPermalink }}">Yerleşimleri keşfet <span aria-hidden="true">↗</span></a>
-        <a class="text-link" href="{{ (site.GetPage "/arsiv").RelPermalink }}">Arşive göz at <span aria-hidden="true">→</span></a>
+        <a class="button" href="{{ (site.GetPage "/tarih").RelPermalink }}">İki adın birleşimi <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="{{ (site.GetPage "/yerlesimler").RelPermalink }}">Yerleşimleri keşfet <span aria-hidden="true">→</span></a>
       </div>
     </div>
     <figure class="hero-figure">

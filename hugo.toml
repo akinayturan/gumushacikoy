@@ -17,79 +17,19 @@ enableRobotsTXT = true
   konu = 'konular'
 
 [[menus.main]]
-  name = 'İlçe'
-  identifier = 'ilce'
-  weight = 10
-
-[[menus.main]]
-  name = 'Gümüşhacıköy'
-  parent = 'ilce'
-  pageRef = '/ilce'
-  weight = 10
-
-[[menus.main]]
   name = 'Tarih'
-  parent = 'ilce'
   pageRef = '/tarih'
-  weight = 20
+  weight = 10
 
 [[menus.main]]
-  name = 'Yerleşimler'
-  parent = 'ilce'
+  name = 'Yerler'
   pageRef = '/yerlesimler'
-  weight = 30
-
-[[menus.main]]
-  name = 'Kültürel miras'
-  parent = 'ilce'
-  pageRef = '/miras'
-  weight = 40
-
-[[menus.main]]
-  name = 'Nasıl gidilir?'
-  parent = 'ilce'
-  pageRef = '/nasil-gidilir'
-  weight = 50
-
-[[menus.main]]
-  name = 'Kültür'
-  identifier = 'kultur'
   weight = 20
 
 [[menus.main]]
-  name = 'İnanç ve kültür'
-  parent = 'kultur'
-  pageRef = '/inanc-ve-kultur'
-  weight = 10
-
-[[menus.main]]
-  name = 'Defterler'
-  parent = 'kultur'
-  pageRef = '/defterler'
-  weight = 20
-
-[[menus.main]]
-  name = 'Sözlü tarih'
-  parent = 'kultur'
-  pageRef = '/sozlu-tarih'
-  weight = 30
-
-[[menus.main]]
-  name = 'İnsanlar'
-  identifier = 'insanlar'
-  weight = 30
-
-[[menus.main]]
-  name = 'Aileler'
-  parent = 'insanlar'
+  name = 'Aileler ve kişiler'
   pageRef = '/aileler'
-  weight = 10
-
-[[menus.main]]
-  name = 'Kişiler'
-  parent = 'insanlar'
-  pageRef = '/kisiler'
-  weight = 20
+  weight = 30
 
 [[menus.main]]
   name = 'Arşiv'
@@ -100,3 +40,8 @@ enableRobotsTXT = true
   name = 'Yazılar'
   pageRef = '/yazilar'
   weight = 50
+
+[[menus.main]]
+  name = 'Kaynakça'
+  pageRef = '/kaynakca'
+  weight = 60

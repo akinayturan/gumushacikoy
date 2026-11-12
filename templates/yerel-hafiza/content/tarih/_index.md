@@ -3,6 +3,7 @@ title: Tarih
 description: Tarihli olaylar, göç ve iskân.
 menu:
   main:
-    weight: 20
+    name: Tarih
+    weight: 10
 ---
 Tarihli olaylar, göç ve iskân.

@@ -34,11 +34,6 @@ p { margin: 0; }
 .masthead nav a, .header-actions a, .site-footer nav a { white-space: nowrap; font-size: .86rem; }
 .masthead nav a, .site-footer nav a { color: var(--ink); text-decoration: none; }
 .masthead nav a:hover, .masthead nav a[aria-current], .masthead nav a.active { text-decoration: underline; color: var(--accent-dark); }
-.nav-group { position: relative; font-size: .86rem; }
-.nav-group summary { cursor: pointer; }
-.nav-group summary.active { color: var(--accent-dark); }
-.nav-group ul { position: absolute; z-index: 3; min-width: 10.5rem; width: max-content; margin: .5rem 0 0; padding: .35rem; list-style: none; border: 1px solid var(--line); background: var(--white); box-shadow: 0 .35rem 1rem #26231f16; }
-.nav-group a { display: block; padding: .45rem .65rem; }
 
 .button { display: inline-flex; align-items: center; justify-content: center; gap: .6rem; padding: .8rem 1.05rem; background: var(--accent-dark); color: var(--white); text-decoration: none; font: 600 .9rem/1.4 var(--sans); border: 1px solid var(--accent-dark); cursor: pointer; }
 .button:hover { background: var(--accent); color: var(--white); }
@@ -157,7 +152,6 @@ select, input { border: 1px solid var(--line); padding: .72rem; background: var(
   .hero h1 { font-size: min(15.2cqi, 4.5rem); }
   .hero-figure img { aspect-ratio: 16/10; }
   .masthead nav a, .header-actions a { font-size: .79rem; }
-  .nav-group { font-size: .79rem; }
   .masthead nav, .header-actions { column-gap: .65rem; }
   .brand { font-size: 1rem; gap: .38rem; }
   .brand-icon { width: 32px; height: 32px; }

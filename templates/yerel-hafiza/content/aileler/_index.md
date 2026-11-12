@@ -3,6 +3,9 @@ title: Aileler
 description: Aile kayıtları ve soy ağaçları.
 menu:
   main:
-    weight: 40
+    name: Aileler ve kişiler
+    weight: 30
 ---
 Aile kayıtları ve soy ağaçları.
+
+[Kişiler]({{< relref "/kisiler" >}})
